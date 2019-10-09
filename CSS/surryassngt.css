@@ -1,0 +1,59 @@
+body{
+    margin : 0;
+    padding: 0;
+    background: lightgreen; 
+
+}
+img {
+    width: 260px;
+    height: auto;
+    opacity: 0.7;
+}
+img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s;
+}
+nav {
+    height: 50px;
+    background: lightgreen;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; 
+}
+nav h2 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+}
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+.article {
+    width: 19.5%;
+    background:lightgreen;
+}
+.article p {
+    background: wheat;
+    padding: 20px;
+    text-align: justify;
+    color: black;
+}
+/*responsiveness*/
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+    .main-section {
+        flex-direction: column;
+    }
+    .article {
+        width: 100%;
+        }
+    img {
+        width: 100%;
+    }
+    nav ul {
+        flex-wrap: 
+    }    
+}

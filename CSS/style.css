@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+img {
+    width: 150px;
+    height: 100px;
+    float: left;
+}
+p {
+    text-align: justify;
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+}
+    nav ul {
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        height: 50px;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        
+    }
+    nav ul li a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 20px;
+
+    }
+    nav ul li a:hover {
+        color:blue;
+
+    }
+    footer{
+        height: 50px;
+        background-color:black;
+        clear: both;
+        position: absolute;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    /*side Navigation*/
+    .side-nav{
+        width: 10%;
+        float: left;
+        height:400px;
+        background-color:black;
+        margin-right: 10px;
+    }
+    .side-nav h4 {
+        color:white;
+        font-size: 20px;
+    }
+    .side-nav ul{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .side-nav ul li{
+        list-style: none;
+        padding: 12px 14px;
+    }
+    .side-nav ul li a{
+        text-decoration: none;
+        color: white;
+       font-size: 26px;
+    }
+    .side-nav ul li:hover {
+        /*border-bottom: 2px solid white;*/
+        background-color: white;
+
+    }
+    .side-nav ul li a:hover {
+        color: tomato;
+    }  
+    .main{
+        width:67%;
+        float:left;
+        background-color: azure;
+    
+    }
+    /*Mobile navigation*/
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        background-color: black;
+        width: 100%;
+        display: block;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color:white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+   .topnav a.icon {
+        background: red;
+        display: black;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 48px;
+    }
+    .container-icon {
+        margin-top: -20px;
+    }
+    .icon {
+        border: 1px solid red;
+        width: 35px;
+        margin: 6px 0;
+        margin-left: 95%;
+        
+    }
+    img {
+        width: 200px;
+        height: auto;
+        float: left;
+    }
+    body {
+        background-color: lightskyblue;
+    }
+    
+    footer {
+        height: 60;
+        background: black;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        color: white;
+    }
+
+    footer p {
+        color: white;
+        padding: 1px 16px;
+        text-align: center;
+    }
