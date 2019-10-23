@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: calc(100vh);
+    background: url('../img/organic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+}
+a {
+    text-decoration: none;
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;
+}
+#sidebar.active {
+    left: 0px;
+}
+#sidebar ul li{
+    color: rgba(230,230,230,0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+#sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+#sidebar ul li:hover,.active{
+     background: aqua;
+}
+#sidebar {
+     margin-top: -20px;
+     top :20px;
+
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    margin-top: 30px;
+}
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    margin: 3px 0px;
+}
+.page-nav{
+    width: 100%;
+    height: 50px;
+    
+}
+.page-nav ul{
+    margin-left: 0px;
+}
+.page-nav ul li{
+    float: left;
+    width: 100px;
+    list-style: none;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.page-nav ul li a{
+    color: white;
+}
+.nav-login{
+    float: right;
+    margin-right: 1px;
+}
+footer {
+    bottom: 0px;
+    background-color: rgba(77, 114, 114, 0.3);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+
+}
+footer p {
+    color: rgb(255, 251, 251);
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.h1-reg {
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    background:aqua;
+    color: black;
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+}
+.register-content{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+}
+.form {
+    padding: 10px;
+    font-family: arial;
+    margin: 0 auto;
+    /*height: 100vh;*/
+}
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+input[type=text], input[type=email], input[type=password], input[type=confirmpassword], input[type=submit] {
+    width: 90%;
+}
+input[type=submit] {
+    background-color:aqua;
+    width: 94%;
+    color: black;
+}
+input[type=submit]:hover{
+    background-color: lightgray;
+    color: black;
+    transition: 1s;
+}
+h5 {
+    color: white;
+    font-size: 18px;
+}
+
+/*responsiveness*/
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+    .page-nav{
+        display: none;
+    }
+    .register-content{
+        flex-direction: column;
+        width: auto;
+        text-align: justify;
+        margin-left: 20px;   
+    }
+    body {
+        width: 100%;
+    }
+}
